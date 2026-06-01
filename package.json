@@ -1,0 +1,27 @@
+{
+  "name": "exercicio-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.cy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersonMoraees/exercicio-cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AndersonMoraees/exercicio-cypress/issues"
+  },
+  "homepage": "https://github.com/AndersonMoraees/exercicio-cypress#readme",
+  "dependencies": {
+    "cypress": "^15.16.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0"
+  }
+}
