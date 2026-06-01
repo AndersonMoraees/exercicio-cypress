@@ -2,7 +2,6 @@
 import { faker } from '@faker-js/faker';
 
 describe('Funcionalidade: Cadastro de Usuário', () => {
-
   beforeEach(() => {
     cy.visit("register.html")
   });

@@ -1,7 +1,6 @@
 /// <reference types="cypress"/>
 
 describe('Funcionalidade: Login', () => {
-
     beforeEach(() => {
         cy.visit("login.html")
     });
