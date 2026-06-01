@@ -8,15 +8,17 @@ describe('Funcionalidade: Cadastro de Usuário', () => {
   });
 
   it.only('Deve cadastrar um novo usuário com sucesso', () => {
-    cy.get('#name').type('oi bb')
-    cy.get('#email').type('email4@email.com')
+    let nome = faker.person.fullName()
+    let email = faker.internet.email()
+    cy.get('#name').type(nome)
+    cy.get('#email').type(email)
     cy.get('#phone').type('85999999999')
     cy.get('#password').type('senha@123')
     cy.get('#confirm-password').type('senha@123')
     cy.get('#terms-agreement').click()
     cy.get('#register-btn').click()
     //Resultado esperado
-    cy.get('#user-name').should('contain', 'oi bb')
+    cy.get('#user-name').should('contain', nome)
   });
 });
 
